@@ -1,0 +1,212 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Squibbly</title>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+	    <!---strat-slider---->
+	    <script type="text/javascript" src="js/jquery.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/slider-style.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<!---//strat-slider---->
+		<!---start-login-script--->
+		<script src="js/login.js"></script>
+		<!---//End-login-script--->
+		<!-----768px-menu----->
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+			<script type="text/javascript">
+				//	The menu on the left
+				$(function() {
+					$('nav#menu-left').mmenu();
+				});
+		</script>
+		<script type="text/javascript" src="js/loginVal.js"></script>
+		<script type="text/javascript" src="js/signupVal.js"></script>
+		<!-----//768px-menu----->
+</head>
+<body>
+	<!---start-wrap---->
+		<!------start-768px-menu---->
+			<div id="page">
+					<div id="header">
+						<a class="navicon" href="#menu-left"> </a>
+					</div>
+					<nav id="menu-left">
+						<ul>
+							<li><a href="mycalendar.html">My Calendar</a></li>
+							<li><a href="groupcalendar.html">Group Calendar</a></li>
+							<div class="clear"> </div>
+						</ul>
+					</nav>
+			</div>
+		<!------start-768px-menu---->
+			<!---start-header---->
+			<div class="header">
+				<div class="wrap">
+				<div class="header-left">
+					<div class="logo">
+						<a href="index.jsp"><img src="images/logo.jpg" /></a>
+					</div>
+				</div>
+				<div class="header-right">
+				<div class="sign-ligin-btns">
+					<ul>
+						<li id="signupContainer"><a class="signup" id="signupButton" href="#"><span><i>Sign Up</i></span></a>
+							 <div class="clear"> </div>
+				                <div id="signupBox">                
+				                    <form id="signupForm" name="signupForm" action="mycalendar.html" onsubmit="return ValidateSignupInfo()">
+				                        <fieldset id="signupbody">
+											<fieldset>
+				                                <label for="firstname">First name <span>*</span></label>
+				                                <input type="text" name="firstname" id="signupfirstname" required/>
+				                            </fieldset>
+											<fieldset>
+				                                <label for="lastname">Last name <span>*</span></label>
+				                                <input type="text" name="lastname" id="signuplastname" required/>
+				                            </fieldset>
+				                            <fieldset>
+				                                <label for="email">Email Address <span>*</span></label>
+				                                <input type="text" name="email" id="signupemail" required/>
+				                            </fieldset>
+				                            <fieldset>
+				                                <label for="password">Choose Password <span>*</span></label>
+				                                <input type="password" name="password1" id="signuppassword" required/>
+				                            </fieldset>
+				                             <fieldset>
+				                                <label for="password">Confirm Password <span>*</span></label>
+				                                <input type="password" name="password2" id="signuppassword1" required/>
+				                            </fieldset>
+				                            <input type="submit" id="signup" value="Register Now!" />
+				                        </fieldset>
+				                    </form>
+				                </div>
+				            <!-- Login Ends Here -->
+						</li>
+						<li id="loginContainer"><a class="login" id="loginButton" href="#"><span><i>Log In</i></span></i></a>
+							 <div class="clear"> </div>
+				                <div id="loginBox">                
+				                    <form id="loginForm" name="loginForm" action="mycalendar.html" onsubmit="return ValidateLoginInfo()">
+				                        <fieldset id="body">
+				                            <fieldset>
+				                                <label for="email">Email Address</label>
+				                                <input type="text" name="email" id="email" required/>
+				                            </fieldset>
+				                            <fieldset>
+				                                <label for="password">Password</label>
+				                                <input type="password" name="password" id="password" required/>
+				                            </fieldset>
+				                            <label class="remeber" for="checkbox"><input type="checkbox" id="checkbox" />Remember me</label>
+				                            <input type="submit" id="login" value="login" />
+				                        </fieldset>
+				                        <span><a href="#">Forgot your password?</a></span>
+				                    </form>
+				                </div>
+				            <!-- Login Ends Here -->
+						</li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<div class="clear"> </div>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			</div>
+			<!---//End-header---->
+			<!----start-banner---->
+			<div class="text-slider">
+				<div class="wrap"> 
+			<!---start-da-slider----->
+			<div id="da-slider" class="da-slider">
+					<div class="da-slide">
+						<h2>Very Simple </h2>
+						<p> and Intuitive</p>
+					</div>
+					<div class="da-slide">
+						<h2>Never Miss Out an Event</h2>
+						<p> Ever Again!</p>
+					</div>
+					<div class="da-slide">
+						<h2>Organize All Your Tasks</h2>
+						<p> in a Breeze</p>						
+					</div>
+					<div class="da-slide">
+						<h2>Working in a Group?</h2>
+						<p> Just Use the Group Calendar</p>
+					</div>
+					<nav class="da-arrows">
+						<span class="da-arrows-prev"> </span>
+						<span class="da-arrows-next"> </span>
+					</nav>
+			</div>
+				<script type="text/javascript" src="js/jquery.cslider.js"></script>
+				<script type="text/javascript">
+					$(function() {
+						$('#da-slider').cslider({
+							autoplay	: true,
+							bgincrement	: 450
+						});
+					
+					});
+				</script>
+			 </div>
+			</div>
+				<!---//End-da-slider----->
+			<!----//End-banner---->
+			<!----start-content--->
+			<div class="content">
+				<div class="wrap">
+					<!--- start-top-grids---->
+					<div class="top-grids">
+						<div class="top-grid">
+							<div class="product-pic frist-product-pic">
+								<img src="images/add.jpg" title="watch" />
+							</div>
+							<span><label>1</label></span>
+							<div class="border"> </div>
+							<a href="#">Create an Account</a>
+						</div>
+						<div class="top-grid">
+							<div class="product-pic">
+								<img src="images/save.jpg" title="shoe" />
+							</div>
+							<span><label>2</label></span>
+							<div class="border hide"> </div>
+							<a href="#">Save your tasks</a>
+						</div>
+						<div class="top-grid hide">
+							<div class="product-pic">
+								<img src="images/check.jpg" title="laptop" />
+							</div>
+							<span><label>3</label></span>
+							<a href="#">Be updated!</a>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					</div>
+					<!---end-top-grids---->
+			
+				<!---start-bottom-footer-grids---->
+				<div class="footer-grids">
+					<div class="wrap">
+						<div class="footer-grid">
+							<h2>Developers</h2>
+							<br>
+								<p>Demanarig, Jake Ryan D.</p>
+								<p>Almonte, John Paul V.</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<!---//End-bottom-footer-grids---->
+			</div>
+			<!----//End-content--->
+		<!---//End-wrap---->
+</body>
+</html>
